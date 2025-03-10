@@ -1,0 +1,5 @@
+#外部ライブラリのみ記入
+openai
+streamlit==1.43.1 #verを指定して記入することもできる
+#git remote add origindotenv
+python-dotenv
