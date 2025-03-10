@@ -7,3 +7,4 @@ main_old.py  # main_test.pyファイルを無視
 .env
 aaa/          # aaaフォルダ内の全てのファイルを無視 …aaaフォルダが実際になくても、エラーにはなりません
 
+.env
