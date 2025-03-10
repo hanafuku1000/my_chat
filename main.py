@@ -3,12 +3,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 import os  
 import sys  # sysモジュールをインポート
-from dotenv import load_dotenv
 
-# .envファイルを読み込む
-load_dotenv()
-
-# Azure OpenAI の API キーとエンドポイントを環境変数ファイルから取得
+# Azure OpenAI の API キーとエンドポイントを環境変数から取得
 azure_endpoint = os.getenv("CHATBOT_AZURE_OPENAI_ENDPOINT")
 api_key = os.getenv("CHATBOT_AZURE_OPENAI_API_KEY")
 deployment_name = os.getenv("CHATBOT_AZURE_OPENAI_DEPLOYMENT_NAME")
