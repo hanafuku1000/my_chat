@@ -3,6 +3,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import os  
 import sys  # sysモジュールをインポート
+import time
 
 # Azure OpenAI の API キーとエンドポイントを環境変数から取得
 azure_endpoint = os.getenv("CHATBOT_AZURE_OPENAI_ENDPOINT")
@@ -92,11 +93,6 @@ st.text_input(
 # チャット履歴をリセットするボタン
 if st.button("リセット"):
     reset_session_state()
-
-# アプリケーション終了ボタン
-if st.button("終了"):
-    st.warning("アプリケーションを終了します。")
-    sys.exit()
 
 
 # 初期表示時にカーソルを設定するスクリプト
